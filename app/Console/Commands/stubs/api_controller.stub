@@ -1,0 +1,21 @@
+<?php
+
+namespace {{ namespace }};
+
+use App\Http\Controllers\Controller;
+use App\Helpers\JSON;
+use Illuminate\Http\Request;
+
+class {{ class }} extends Controller
+{
+    /**
+     * Return JSON response for this API endpoint
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function index(Request $request)
+    {
+        return JSON::success('The endpoint API is working flawlessly');
+    }
+}

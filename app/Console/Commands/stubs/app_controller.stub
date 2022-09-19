@@ -1,0 +1,21 @@
+<?php
+
+namespace {{ namespace }};
+
+use App\Http\Controllers\Controller;
+// use App\Helpers\JSON;
+// use Illuminate\Http\Request;
+use Illuminate\Contracts\Support\Renderable as View;
+
+class {{ class }} extends Controller
+{
+    /**
+     * Get the homepage for app view
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function index(): View
+    {
+        return view('app.index');
+    }
+}
